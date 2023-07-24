@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import UseState from './pages/UseState';
 import UseEffect from './pages/UseEffect';
+import UseEffectWindow from './pages/UseEffectWindow';
 
 import GlobalStyles from './styles/Global';
 
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/use-state' element={<UseState />}/>
         <Route path='/use-effect' element={<UseEffect />}/>
+        <Route path='/use-effect-window' element={<UseEffectWindow />}/>
       </Routes>
     </>
   )
