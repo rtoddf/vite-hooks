@@ -33,3 +33,4 @@ function UseEffect(){
 export default UseEffect;
 
 // blog article: https://blog.webdevsimplified.com/2020-04/use-effect/
+// https://jsonplaceholder.typicode.com
