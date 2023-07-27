@@ -1,24 +1,17 @@
-import React, {useState} from 'react';
 import ContextComponent from './_children/ContextComponent';
 import { Container } from "../styles/Router.styled";
-
-export const ThemeContext = React.createContext();
+import { ThemeProvider } from '../hooks/ThemeContext';
 
 function UseContext(){
-  const [darkTheme, setDarkTheme] = useState(true);
-
-  function toggleTheme(){
-    setDarkTheme(prevDarkTheme => !prevDarkTheme)
-  }
-
   return (
-    <ThemeContext.Provider value={darkTheme}>
+    <ThemeProvider>
       <Container>
-        <button onClick={toggleTheme}>Toggle Theme</button>
         <ContextComponent />
       </Container>
-    </ThemeContext.Provider>
+    </ThemeProvider>
   )
 }
 
 export default UseContext;
+
+// go back over this one. you got it, but the cleanup was confusing
